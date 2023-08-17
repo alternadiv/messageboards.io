@@ -1,0 +1,133 @@
+body {
+    background-color: black;
+    color: darkgray;
+    font-family: Verdana;
+    font-size: 15px;
+    margin: auto;
+    max-width: 700px;
+    padding: 10px;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: deeppink;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+header {
+    background-color: #151515;
+}
+
+#logo {
+    color: deeppink;
+    font-size: 15px;
+    margin: 0;
+}
+.logo-right {
+    float: right;
+    font-weight: 500;
+    font-size: 12px;
+}
+#slogan {
+    color: darkgray;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.niche {
+}
+
+.niche a {
+    background-color: #444;
+    color: silver;
+    font-size: 12px;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.niche-breadcrumb {
+    background-color: #555;
+    color: #202020;
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    max-width: 250px;
+    padding: 2px;
+    text-transform: lowercase;
+}
+
+.niche-current {
+    color: black;
+}
+
+.entry {
+    background-color: #252525;
+    border-top: 1px solid deeppink;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.entry h3 {
+    color: white;
+    background-color: #151515;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.entry a {
+    color: white;
+}
+
+.entry-snippet {
+    color: darkgray;
+    float: right;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.entry-description {
+    padding: 3px;
+}
+
+.entry-footer {
+    background-color: #151515;
+    font-size: 11px;
+    padding: 2px;
+}
+
+footer {
+    background-color: #151515;
+    color: darkgray;
+    font-size: 10px;
+    margin-top: 35px;
+}
+
+.about {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.copyright {
+    font-size: 15px;
+}
