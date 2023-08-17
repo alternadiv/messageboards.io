@@ -1,66 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>messageboards.io</title>
+    <title>messageboards.io | list of internet forums</title>
     <style>
         body {
             background-color: black;
             color: darkgray;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana;
+            font-size: 15px;
+            margin: auto;
+            max-width: 700px;
+            padding: 10px;
         }
-        h1 {
+
+        a,
+        a:link,
+        a:visited,
+        a:active {
             color: deeppink;
+            text-decoration: none;
         }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 0;
+        }
+
         li {
             display: inline-block;
         }
-        .submit {
-            font-size: medium;
-            font-weight: 400;
-            float: right;
+
+        header {
+            background-color: #151515;
         }
-        footer {
-            color: #444;
+
+        #logo {
+            color: deeppink;
+            font-size: 15px;
+            margin: 0;
+        }
+        .logo-right {
+            float: right;
+            font-weight: 500;
+            font-size: 12px;
+        }
+        #slogan {
+            color: darkgray;
             font-size: 10px;
-            margin-top: 100px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .niche {
+        }
+
+        .niche a {
+            background-color: #444;
+            color: silver;
+            font-size: 12px;
+            padding: 3px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        .niche-breadcrumb {
+            background-color: #555;
+            color: #202020;
+            font-size: 14px;
+            margin-top: 35px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            max-width: 250px;
+            padding: 2px;
+            text-transform: lowercase;
+        }
+
+        .niche-current {
+            color: black;
+        }
+
+        .entry {
+            background-color: #252525;
+            border-top: 1px solid deeppink;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .entry h3 {
+            color: deeppink;
+            background-color: #151515;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 4px;
+            margin-bottom: 2px;
+            padding: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .entry-snippet {
+            color: darkgray;
+            float: right;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .entry-description {
+            padding: 3px;
+        }
+
+        .entry-footer {
+            font-size: 11px;
+            padding-left: 3px;
+            padding-bottom: 3px;
+        }
+
+        footer {
+            background-color: #151515;
+            color: darkgray;
+            font-size: 10px;
+            margin-top: 35px;
+        }
+
+        .about {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .copyright {
+            font-size: 15px;
         }
     </style>
 </head>
-<h1>messageboards.io <span class="submit">submit</span></h1>
+
 <body>
-    <div class="about">
-        I miss 2000s-era web design and internet forums. Here's some cool forums.
-    </div>
-    <hr>
-    <p>
-        categories:
-        <br>
-        <a href="#">animals</a>
-        <a href="#">apple</a>
+    <header>
+        <hr>
+        <h1 id="logo"><a href="https://messageboards.io/">messageboards.io</a> <span class="logo-right"><a href="/about/">about</a></span></h1>
+        <h3 id="slogan">I like old internet forums. Here's some that I think are rad.</h3>
+        <hr>
+    </header>
+    <div class="niche">
+        <a href="#animals">animals</a>
+        <a href="#apple">apple</a>
         <a href="#automotive">automotive</a>
         <a href="#gaming">gaming</a>
-        <a href="#">toyota</a>
+        <a href="#photography">photography</a>
+        <a href="#technology">technology</a>
+        <a href="#toyota">toyota</a>
+        <a href="#web-dev">web-development</a>
+    </div>
+    <h3 class="niche-breadcrumb">Automotive > <span class="niche-current">Ford</span></h3>
+    <div class="entry">
+        <h3><a href="https://forums.fordthunderbirdforum.com/">Ford Thunderbird Forum Club</a>
+            <span class="entry-snippet">"1955-2005 Ford Thunderbirds"</span>
+        </h3>
+        <p class="entry-description">
+            "1955-2005 Ford Thunderbirds"
+        </p>
+    </div>
+    <h3 class="niche-breadcrumb">Automotive > <span class="niche-current">Toyota</span></h3>
+    <div class="entry">
+        <h3><a href="https://tacoma3g.com">Tacoma3G</a>
+            <span class="entry-snippet">"3rd Generation Toyota Tacomas"</span>
+        </h3>
+        <p class="entry-description">
+            Tacoma3G is a Toyota Tacoma enthusiast website specific to the 4th Generation (2024+) and 3rd Generation
+            (2016–2023) model-year trucks.
+            We strive to maintain a beginner-friendly and professional atmosphere within our forums, and all of our
+            resources are free!
+        </p>
+        <p class="entry-footer">
+            <a href="https://tacoma3g.com/forum/">https://tacoma3g.com/forum/</a>
+        </p>
+    </div>
+<div class="entry">
+    <h3><a href="https://www.tacoma4g.com">Tacoma4G</a><span class="entry-snippet">"2024 Tacoma News"</span></h3>
+    <p class="entry-description">
+        Tacoma4G is your top source for 2024+ Toyota Tacoma forum, news, price, specs, review, classifieds, photos/videos.
     </p>
-    <p>
-        softwares:
-        <br>
-        <a href="#">discourse</a>
-        <a href="#">invision community</a>
-        <a href="#">xenforo</a>
+    <p class="entry-footer">
+        <a href="https://www.tacoma4g.com/forum/"></a>
     </p>
+</div>
+    <h3 class="niche-breadcrumb">Technology > <span class="niche-current">Apple</span></h3>
+    <div class="entry">
+        <h3>MacRumors <span class="entry-snippet">"Apple News and Rumors"</span></h3>
+        <p class="entry-description">
+            MacRumors.com is the most popular Apple News and Rumor site on the internet. With breaking news, live event coverage,
+            discussion forums, tutorials and a buyer's guide, MacRumors.com commands the attention of individual customers and
+            industry watchers alike.
+        </p>
+    </div>
+    <h3 class="niche-breadcrumb">Technology > <span class="niche-current">Photography</span></h3>
+    <div class="entry">
+        <h3><a
+                href="https://cameraderie.org/">Cameraderie</a><span class="entry-snippet">"A Friendly Photography Forum"</span>
+        </h3>
+        <p class="entry-description">
+            Photography forum community for sharing photos, information, and talking camera gear.
+        </p>
+        <p class="entry-footer">
+            <a href="https://cameraderie.org/forums/"></a>
+        </p>
+    </div>
+    <h3 class="niche-breadcrumb">Web Development > <span class="niche-current">XenForo</span></h3>
+        <div class="entry">
+            <h3><a
+                    href="https://alternadiv.com/">Alternadiv</a><span class="entry-snippet">"Alternative Web Design"</span>
+            </h3>
+            <p class="entry-description">
+I miss 2000s-era web design. I still use internet forums.
+
+Enter: Alternadiv. Aka, Alt⟨div⟩. This is my little collection of: peculiar - and retro - and niche - and lightweight -
+and... perhaps, unnecessary - web development shenanigans; primarily in the form of custom styles for XenForo powered
+websites and forums of the Word Wide Web.
+            </p>
+            <p class="entry-footer">
+                <a href="https://alternadiv.com/">https://alternadiv.com/</a>
+            </p>
+        </div>
+    <div class="entry">
+        <h3><a
+                href="https://www.customizexf.com/">customizeXF</a><span class="entry-snippet">"Enhance your default XenForo style."</span>
+        </h3>
+        <p class="entry-description">
+    
+    
+            Easy customize your default XenForo style, install our free or paid add-ons and tweak your forum with our DIY
+            customizations.
+    
+            This forum runs default XenForo style customized by us. For painless upgrading.
+    
+            If you need help with customizations, don't hesitate to contact us.
+    
+        </p>
+        <p class="entry-footer">
+            <a href="https://www.customizexf.com/forums/">https://www.customizexf.com/forums/</a>
+        </p>
+    </div>
+    <footer>
     <hr>
-    <h2>Automotive</h2>
-    <h3>Toyota</h3>
-    <p>
-        Tacoma3G
-        <br>
-        <a href="https://tacoma3g.com">https://tacoma3g.com</a>
-        <br>
-        <small>powered by: xenforo | ads: none | online since: 2018</small>
+    <p class="about">
+    I miss 2000s-era web design. I still use internet forums.
+    
+    Enter: Alternadiv. Aka, Alt⟨div⟩. This is my little collection of: peculiar - and retro - and niche - and lightweight -
+    and... perhaps, unnecessary - web development shenanigans; primarily in the form of custom styles for XenForo powered
+    websites and forums of the Word Wide Web.
+    </p>
+    <p class="copyright">
+        messageboards.io 2023 | updated: 20230612
+    </p>
+    </footer>
 </body>
-<footer>
-    messageboards.io 2023 | an alternadiv website | updated: 20230612
-</footer>
+
 </html>
