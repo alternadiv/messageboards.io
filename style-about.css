@@ -2,13 +2,73 @@ body {
     background-color: black;
     color: darkgray;
     font-family: verdana;
-    font-size: 15px;
     margin: auto;
     max-width: 700px;
     padding: 10px;
 }
 
-a,
-a:any-link {
+h1 {
+    font-size: 13px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 11px;
+    margin: 0;
+}
+
+h3 {
+    background-color: #151515;
     color: white;
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    border-left: 1px solid deeppink;
+}
+
+p {
+    margin: 0;
+    padding: 3px;
+}
+
+.snippet {
+    color: #4e4e4e;
+    font-weight: 500;
+    font-size: 12px;
+    float: right;
+}
+
+a:any-link {
+    color: deeppink;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #151515;
+    margin-bottom: 20px;
+}
+
+#logo a {
+    color: white;
+}
+
+#about a {
+    color: deeppink;
+    font-weight: 500;
+    font-size: 12px;
+    float: right;
+}
+
+section {
+    background-color: #1c1c1c;
+    margin: 20px 5px;
+}
+
+footer {
+    background-color: #151515;
+    font-size: 10px;
 }
